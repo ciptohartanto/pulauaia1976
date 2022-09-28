@@ -1,0 +1,95 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.carousel-background {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 20px;
+  background-color: rgba(189, 63, 0, 0.6);
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+}
+
+.specialTreatment {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.carousel-title h1 {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+.carousel-title h2 {
+  font-size: 26px;
+  margin-bottom: 48px;
+}
+.carousel-title address {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.carousel-title h4 {
+  font-size: 18px;
+}
+
+.carousel-background--1 {
+  background-image: url("/images/slide1.jpg");
+}
+
+.carousel-background--2 {
+  background-image: url("/images/slide2.jpg");
+}
+
+.carousel-background--3 {
+  background-image: url("/images/slide4.jpg");
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-title {
+        width: 280px;
+        max-width: 400px;
+    }
+
+  .specialTreatment {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .carousel-title h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+  .carousel-title h2 {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .carousel-title address {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .carousel-title h4 {
+    font-size: 13px;
+  }
+}
