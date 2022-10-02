@@ -33,13 +33,41 @@ body {
   text-align: center;
 }
 
+.carousel-splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-splashImage {
+  display: block;
+  z-index: 1;
+}
+
+.carousel-splash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(189, 63, 0, 0.6);
+}
+
 .specialTreatment {
   text-transform: uppercase;
   font-size: 26px;
 }
 
 .telp {
-    color: #fff;
+  color: #fff;
 }
 
 .carousel-title h1 {
@@ -71,10 +99,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .carousel-title {
-        width: 280px;
-        max-width: 400px;
-    }
+  .carousel-title {
+    width: 280px;
+    max-width: 400px;
+  }
 
   .specialTreatment {
     text-transform: uppercase;
@@ -95,5 +123,9 @@ body {
   }
   .carousel-title h4 {
     font-size: 13px;
+  }
+  .carousel-splashImage {
+    width: 90%;
+    height: auto;
   }
 }

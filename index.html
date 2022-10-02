@@ -9,23 +9,29 @@
     <!-- url preview metas -->
     <!-- Primary Meta Tags -->
     <title>Soto Padang Pulau Aia 1976</title>
-    <meta name="title" content="Soto Padang Pulau Aia 1976">
-    <meta name="description" content="Soto Padang Pulau Aia 1976">
+    <meta name="title" content="Soto Padang Pulau Aia 1976" />
+    <meta name="description" content="Soto Padang Pulau Aia 1976" />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pulauaia1976.com">
-    <meta property="og:title" content="Soto Padang Pulau Aia 1976">
-    <meta property="og:description" content="Soto Padang Pulau Aia 1976">
-    <meta property="og:image" itemprop="image" content="https://pulauaia1976.com/images/slide2.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pulauaia1976.com" />
+    <meta property="og:title" content="Soto Padang Pulau Aia 1976" />
+    <meta property="og:description" content="Soto Padang Pulau Aia 1976" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://pulauaia1976.com/images/slide2.jpg"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pulauaia1976.com">
-    <meta property="twitter:title" content="Soto Padang Pulau Aia 1976">
-    <meta property="twitter:description" content="Soto Padang Pulau Aia 1976">
-    <meta property="twitter:image" content="https://pulauaia1976.com/images/slide2.jpg">
-
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pulauaia1976.com" />
+    <meta property="twitter:title" content="Soto Padang Pulau Aia 1976" />
+    <meta property="twitter:description" content="Soto Padang Pulau Aia 1976" />
+    <meta
+      property="twitter:image"
+      content="https://pulauaia1976.com/images/slide2.jpg"
+    />
 
     <!-- CSS only -->
     <link
@@ -47,6 +53,13 @@
   </head>
   <body>
     <div class="carousel-wrapper">
+      <div class="carousel-splash" id="splashImage">
+        <img
+          class="carousel-splashImage"
+          src="/images/KopiLamo.jpeg"
+          alt="Kopi Lamo"
+        />
+      </div>
       <div class="carousel-title">
         <h1>
           <span class="specialTreatment">Soto Padang</span>
@@ -59,7 +72,7 @@
           <br />
           Jl. HR. Soebrantas - Pekanbaru
         </address>
-        <a class="telp" href="tel:0852 7120 4577">Telp: 0852 7120 4577</h4>
+        <a class="telp" href="tel:0852 7120 4577">Telp: 0852 7120 4577</a>
       </div>
       <div
         id="carouselExampleInterval"
@@ -98,4 +111,14 @@
       </div>
     </div>
   </body>
+  <script>
+    const splashImage = document.querySelector("#splashImage");
+    const TIMEOUT = 5000;
+    const deleteSplashImage = setTimeout(() => {
+      splashImage.remove()
+    }, TIMEOUT);
+    document.addEventListener("DOMContentLoaded", () => {
+      deleteSplashImage();
+    });
+  </script>
 </html>
