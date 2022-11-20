@@ -129,3 +129,10 @@ body {
     height: auto;
   }
 }
+
+.aspect1 {
+  aspect-ratio: 1;
+}
+[data-gallery] {
+  margin-bottom: 10px;
+}
