@@ -131,7 +131,7 @@ body {
 }
 
 .aspect1 {
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
 }
 [data-gallery] {
   margin-bottom: 10px;
