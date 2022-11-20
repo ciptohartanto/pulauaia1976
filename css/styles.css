@@ -130,7 +130,9 @@ body {
   }
 }
 
-.aspect1 {
+.gallery-image {
+  width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
 }
 [data-gallery] {
